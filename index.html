@@ -1,0 +1,33 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&rel="stylesheet">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <header class="top">
+            <input id="seed-color" type="color"/>
+            <div class="custom-select" style="width:200px;">
+            <select id="mode-select">
+                <!-- <option value="0" id="select-intro">Select Scheme:</option> -->
+                <option >monochrome</option>
+                <option >monochrome-dark</option>
+                <option >monochrome-light</option>
+                <option >analogic</option>
+                <option >complement</option>
+                <option >analogic-complement</option>
+                <option >triad</option>
+                <option >quad</option>
+            </select>
+            </div>
+            <button id="get-scheme-btn"> Get color scheme</button>
+        </header>
+        
+        <main>
+            <div id="display-colors" class="color-displays">
+            </div>
+        </main>
+        <script src="index.js"></script>
+    </body>
+</html>

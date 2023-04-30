@@ -1,0 +1,115 @@
+html, body{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align:center;
+}
+
+.top{
+    display:flex;
+    gap: 1.5em;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1.0em 0.5em;
+    box-shadow: 0 3px 5px grey;
+    position:fixed;
+    width:100vw;
+    background-color: white;
+}
+
+
+
+input, select, button{
+    cursor:pointer;
+    box-shadow: 0 2px 3px grey;
+    border:none;
+    border-radius: 6px;
+}
+
+select, button{
+    font-family: 'Montserrat', sans-serif;   
+}
+
+input{
+    margin-left:0.5rem;
+}
+
+input:hover,
+select:hover{
+    box-shadow: 0 3px 8px grey;
+}
+
+input, select{
+    height:35px;
+}
+
+select{  
+    padding: 6px;
+    background-color: whitesmoke;
+    color: midnightblue;
+    outline:none;
+}
+
+select:active,
+select:focus{
+    box-shadow: 0 4px 4px palevioletred;
+}
+
+button{
+    font-family: 'Montserrat', sans-serif;
+    font-size:0.7em;
+    padding:0.8em 0.5em;
+    width: 100px;
+    background-color: pink;
+    box-shadow: 0 -7px 9px palevioletred inset;
+    color: midnightblue;
+    font-weight: bold;
+    outline: none;
+    margin-right: 1.2rem;
+}
+
+button:hover,
+button:active,
+button:focus{
+    background-color: lightpink;
+    box-shadow: 0 -7px 9px brown inset;
+    
+}
+
+main{
+    padding-top: 70px;
+}
+
+.color-displays{
+    display:grid;
+    grid-template-columns:repeat(5,1fr);
+}
+
+.colors{
+    height: 80vh
+}
+
+
+p{
+    font-family: 'Montserrat', sans-serif;
+    box-shadow: 0px 0px 2px grey ;
+    margin: 0;
+    padding:0.5em;
+    font-style: italic;
+    font-weight:bold;
+}
+
+@media(min-width:500px){
+    
+    .color-displays{
+    display:grid;
+    grid-template-columns:repeat(5,1fr);
+    max-width:800px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+    main{
+        background-color: whitesmoke;
+    }  
+}
